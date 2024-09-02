@@ -1,0 +1,396 @@
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 30px 0; /* Reduce padding for smaller screens */
+    }
+
+    .header-container h1 {
+        font-size: 3rem; /* Adjust font size for mobile */
+    }
+
+    .header-container p {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .nav-link {
+        font-size: 0.9rem; /* Slightly smaller font size for mobile */
+        padding: 10px 20px; /* Adjust padding for mobile */
+        margin: 0 10px; /* Reduce margin between links */
+    }
+}
+
+/* Media Queries for Smaller Mobile Devices */
+@media only screen and (max-width: 480px) {
+    .header-container h1 {
+        font-size: 2.5rem; /* Further adjust font size for smaller screens */
+    }
+
+    .header-container p {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .nav-link {
+        font-size: 0.8rem; /* Further adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        margin: 0 8px; /* Reduce margin between links */
+    }
+}
+
+
+
+
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 20px 10px; /* Reduce padding for smaller screens */
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 20px;
+        width: 100%;
+        max-width: 100%; /* Allow the container to use the full width on mobile */
+    }
+
+    .file-input {
+        font-size: 0.9rem; /* Slightly smaller font size */
+        padding: 8px;
+    }
+
+    #imageContainer {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+    }
+
+    .image-area {
+        margin-bottom: 20px;
+    }
+
+    .control-group {
+        display: block; /* Stack controls vertically */
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .control-group input {
+        width: 100%; /* Make input fields fill the available width */
+    }
+
+    .buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn {
+        margin: 10px 0; /* Stack buttons vertically with some spacing */
+        width: 100%; /* Make buttons full width */
+    }
+
+    .dropdown-content {
+        min-width: 100%; /* Make dropdown full width */
+    }
+}
+
+/* Media Queries for Smaller Mobile Devices */
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .file-input {
+        font-size: 0.8rem; /* Further reduce font size */
+        padding: 6px;
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 8px 16px; /* Reduce padding */
+    }
+
+    .dropdown-content .btn {
+        padding: 10px 14px; /* Adjust dropdown button padding */
+    }
+}
+
+
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    footer {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+        text-align: center; /* Ensure footer content is centered */
+    }
+
+    .social-link {
+        width: 30px; /* Reduce icon size */
+        height: 30px;
+        margin: 0 8px; /* Reduce margin between icons */
+    }
+
+    .dropdown-btn {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Reduce font size */
+    }
+
+    .registration-section {
+        padding: 20px 10px; /* Reduce padding for smaller screens */
+        min-height: auto; /* Remove min-height to allow for content height */
+    }
+
+    .registration-container {
+        padding: 20px; /* Reduce padding inside the container */
+        max-width: 100%; /* Allow container to use the full width */
+    }
+
+    h2 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+        margin-bottom: 20px; /* Adjust margin below heading */
+    }
+
+    .form-group {
+        margin-bottom: 15px; /* Reduce spacing between form groups */
+    }
+
+    .form-group label {
+        font-size: 0.9rem; /* Adjust label font size */
+    }
+
+    .form-group input {
+        padding: 10px; /* Adjust input padding */
+        font-size: 0.9rem; /* Adjust input font size */
+    }
+
+    .submit-btn {
+        padding: 12px; /* Reduce button padding */
+        font-size: 1rem; /* Adjust button font size */
+    }
+}
+
+/* Media Queries for Smaller Mobile Devices */
+@media only screen and (max-width: 480px) {
+    footer {
+        padding: 15px 10px; /* Further reduce padding */
+    }
+
+    .social-link {
+        width: 25px; /* Further reduce icon size */
+        height: 25px;
+        margin: 0 6px; /* Further reduce margin between icons */
+    }
+
+    .dropdown-btn {
+        padding: 8px 12px; /* Further adjust padding */
+        font-size: 0.8rem; /* Further reduce font size */
+    }
+
+    .registration-container {
+        padding: 15px; /* Further reduce padding inside the container */
+    }
+
+    h2 {
+        font-size: 2rem; /* Further reduce font size */
+        margin-bottom: 15px; /* Further reduce margin below heading */
+    }
+
+    .form-group input {
+        padding: 8px; /* Further adjust input padding */
+        font-size: 0.8rem; /* Further adjust input font size */
+    }
+
+    .submit-btn {
+        padding: 10px; /* Further reduce button padding */
+        font-size: 0.9rem; /* Further reduce button font size */
+    }
+}
+
+
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 20px 0; /* Reduce padding for smaller screens */
+    }
+
+    .header-container h1 {
+        font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+
+    .header-container p {
+        font-size: 1rem; /* Adjust paragraph font size */
+        margin: 5px 0 20px; /* Adjust margins */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Adjust font size */
+        padding: 10px 20px; /* Adjust padding */
+        margin: 0 10px; /* Adjust margin */
+    }
+}
+
+/* Media Queries for Smaller Mobile Devices */
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 15px 0; /* Further reduce padding */
+    }
+
+    .header-container h1 {
+        font-size: 2.5rem; /* Further adjust font size */
+    }
+
+    .header-container p {
+        font-size: 0.9rem; /* Further adjust paragraph font size */
+        margin: 5px 0 15px; /* Further adjust margins */
+    }
+
+    .nav-link {
+        font-size: 0.9rem; /* Further adjust font size */
+        padding: 8px 16px; /* Further adjust padding */
+        margin: 0 8px; /* Further adjust margin */
+    }
+}
+
+
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .contributors-container {
+        gap: 20px;
+    }
+
+    .contributors-container .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contributor-card {
+        width: 90%;
+        height: auto; /* Allow height to adjust based on content */
+        margin: 10px 0;
+    }
+
+    .contributor-card img {
+        height: 200px; /* Adjust image height */
+    }
+
+    .contributor-info h3 {
+        font-size: 1.2em; /* Adjust font size */
+    }
+
+    .contributor-info p {
+        font-size: 0.9em; /* Adjust font size */
+    }
+
+    .contributor-card .btn {
+        font-size: 0.9em; /* Adjust button font size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+/* Media Queries for Smaller Mobile Devices */
+@media only screen and (max-width: 480px) {
+    .contributor-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contributor-card img {
+        height: 180px; /* Further adjust image height */
+    }
+
+    .contributor-info h3 {
+        font-size: 1em; /* Further adjust font size */
+    }
+
+    .contributor-info p {
+        font-size: 0.8em; /* Further adjust font size */
+    }
+
+    .contributor-card .btn {
+        font-size: 0.8em; /* Further adjust button font size */
+        padding: 6px 12px; /* Further adjust button padding */
+    }
+}
+
+
+/* Media Queries for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .news-section {
+        padding: 40px 10px; /* Reduce padding */
+    }
+
+    .news-section h2 {
+        font-size: 1.5em; /* Adjust font size */
+        margin-bottom: 30px; /* Reduce margin */
+    }
+
+    .news-container {
+        flex-direction: column; /* Stack news cards vertically */
+        gap: 20px; /* Reduce gap between cards */
+    }
+
+    .news-card {
+        width: 100%; /* Make news cards full width */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .news-card h3 {
+        font-size: 1.2em; /* Adjust font size */
+    }
+
+    .news-card p {
+        font-size: 0.9em; /* Adjust font size */
+    }
+
+    .dropdown-btn {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 10px 15px; /* Adjust padding */
+    }
+
+    .dropdown-content {
+        min-width: 140px; /* Adjust dropdown width */
+    }
+
+    .dropdown-content .dropdown-item {
+        font-size: 0.9rem; /* Adjust dropdown item font size */
+        padding: 8px 15px; /* Adjust padding */
+    }
+}
+
+/* Media Queries for Smaller Mobile Devices */
+@media only screen and (max-width: 480px) {
+    .news-section {
+        padding: 30px 5px; /* Further reduce padding */
+    }
+
+    .news-section h2 {
+        font-size: 1.2em; /* Further adjust font size */
+        margin-bottom: 20px; /* Further reduce margin */
+    }
+
+    .news-card {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .news-card h3 {
+        font-size: 1em; /* Further adjust font size */
+    }
+
+    .news-card p {
+        font-size: 0.8em; /* Further adjust font size */
+    }
+
+    .dropdown-btn {
+        font-size: 0.8rem; /* Further adjust button font size */
+        padding: 8px 12px; /* Further adjust padding */
+    }
+
+    .dropdown-content {
+        min-width: 120px; /* Further adjust dropdown width */
+    }
+
+    .dropdown-content .dropdown-item {
+        font-size: 0.8rem; /* Further adjust dropdown item font size */
+        padding: 6px 10px; /* Further adjust padding */
+    }
+}

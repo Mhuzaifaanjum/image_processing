@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="icom.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Image Processing App</h1>
+            
+            <nav>
+                <a href="#home" class="nav-link">Home</a>
+                <a href="Register.html" class="nav-link">Register</a>
+                
+                <a href="#contact" class="nav-link">Contact</a>
+                
+                <!-- Dropdown Button -->
+                <div class="dropdown">
+                    <button class="dropdown-btn">Functions</button>
+                    <div class="dropdown-content">
+                        <a href="enhance.html" class="dropdown-item">Enhance</a>
+                        <a href="filter.html" class="dropdown-item">Filters</a>
+                        <a href="convert.html" class="dropdown-item">Convert</a>
+                        <a href="segmentation.html" class="dropdown-item">Segmentation</a>
+                    </div> 
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <input type="file" id="imageUpload" accept="image/*" class="file-input">
+            
+            <div id="imageContainer">
+                <div class="image-area">
+                    <h3>Original Image</h3>
+                    <canvas id="imageCanvas"></canvas>
+                </div>
+                <div class="image-area">
+                    <h3>Processed Image</h3>
+                    <canvas id="processedCanvas"></canvas>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label for="widthInput">Width:</label>
+                    <input type="number" id="widthInput" placeholder="Width" min="1">
+                </div>
+                <div class="control-group">
+                    <label for="heightInput">Height:</label>
+                    <input type="number" id="heightInput" placeholder="Height" min="1">
+                    <button id="resizeButton" class="btn">Set Resolution</button>
+                </div>
+                <div class="buttons">
+                    <div class="dropdown">
+                        <button id="lowPassButton" class="btn">Low Pass Filter</button>
+                        <div id="lowPassDropdown" class="dropdown-content">
+                            <button id="averagingButton" class="btn">Averaging Filter</button>
+                            <button id="binomialButton" class="btn">Binomial Filter</button>
+                            <button id="medianButton" class="btn">Median Filter</button>
+                            <button id="centeredWeightMedianButton" class="btn">Centered Weight Median Filter</button>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button id="highPassButton" class="btn">High Pass Filter</button>
+                        <div id="highPassDropdown" class="dropdown-content">
+                            <button id="laplacianButton" class="btn">Laplacian Filter</button>
+                            <button id="robertsButton" class="btn">Roberts Filter</button>
+                            <button id="gradientButton" class="btn">Gradient Filter</button>
+                        </div>
+                    </div>
+                    <button id="generateHistogram" class="btn">Generate Histogram</button>
+                </div>
+            </div>
+            
+            <div id="histogramContainer">
+                <canvas id="histogramCanvas"></canvas>
+                <h3>Histogram</h3>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Image Processing App. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://facebook.com" class="social-link" target="_blank">
+                <img src="fb.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/ShortTemperd007" class="social-link" target="_blank">
+                <img src="x2.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/shorttemperd007/" class="social-link" target="_blank">
+                <img src="insta.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-huzaifa-anjum-a80aa0279/" class="social-link" target="_blank">
+                <img src="link.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer> 
+
+    <script src="filter.js"></script>
+</body>
+</html>

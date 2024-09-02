@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Image Processing App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="icom.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Image Processing App</h1>
+            
+            <nav>
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="Register.html" class="nav-link">Register</a>
+                
+                <a href="contact.html" class="nav-link">Contact</a>
+                
+                <!-- Dropdown Button -->
+                <div class="dropdown">
+                    <button class="dropdown-btn">Functions</button>
+                    <div class="dropdown-content">
+                        <a href="enhance.html" class="dropdown-item">Enhance</a>
+                        <a href="filter.html" class="dropdown-item">Filters</a>
+                        <a href="Convert.html" class="dropdown-item">Convert</a>
+                        <a href="segmentation.html" class="dropdown-item">Segmentation</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <main>
+        <div class="container">
+            <input type="file" id="imageUpload" accept="image/*" class="file-input">
+            
+            <div id="imageContainer">
+                <div class="image-area">
+                    <h3>Original Image</h3>
+                    <canvas id="imageCanvas"></canvas>
+                </div>
+                <div class="image-area">
+                    <h3>Processed Image</h3>
+                    <canvas id="processedCanvas"></canvas>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label for="widthInput">Width:</label>
+                    <input type="number" id="widthInput" placeholder="Width" min="1">
+                </div>
+                <div class="control-group">
+                    <label for="heightInput">Height:</label>
+                    <input type="number" id="heightInput" placeholder="Height" min="1">
+                    <button id="resizeButton" class="btn">Set Resolution</button>
+                </div>
+                <div class="buttons">
+                    <div class="dropdown">
+                        <button id="convertButton" class="btn">Convert</button>
+                        <div id="convertDropdown" class="dropdown-content">
+                            <button id="colorToGreyButton" class="btn">Color to Grey</button>
+                            <button id="rgbToPaletteButton" class="btn">RGB to Palette</button>
+                            <button id="paletteToRgbButton" class="btn">Palette to RGB</button>
+                            <button id="reducePaletteButton" class="btn">Reduce Palette Color</button>
+                            <button id="to8BitButton" class="btn">To 8-bit Image</button>
+                            <button id="to1BitButton" class="btn">To 1-bit Image</button>
+                        </div>
+                    </div>
+                    <button id="generateHistogram" class="btn">Generate Histogram</button>
+                </div>
+            </div>
+            
+            <div id="histogramContainer">
+                <canvas id="histogramCanvas"></canvas>
+                <h3>Histogram</h3>
+            </div>
+        </div>
+    </main>
+ 
+    <br><br><br>
+
+    <footer>
+        <p>&copy; 2024 Image Processing App. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://facebook.com" class="social-link" target="_blank">
+                <img src="fb.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/ShortTemperd007" class="social-link" target="_blank">
+                <img src="x2.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/shorttemperd007/" class="social-link" target="_blank">
+                <img src="insta.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-huzaifa-anjum-a80aa0279/" class="social-link" target="_blank">
+                <img src="link.png" alt="LinkedIn">
+            </a>
+        </div>
+    </footer> 
+
+    <script src="convert.js"></script>
+</body>
+</html>
